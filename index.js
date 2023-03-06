@@ -1,14 +1,14 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const url = 'mongodb://47.15.11.122/32/Hello-Team'
-mongoose.connect(url, { useNewUrlParser: true })
-const database = mongoose.connection;
-database.on('error', (error) => {
-    console.log(error)
-})
-database.once('connected', () => {
-    console.log('Database Connected');
-})
+// const mongoose = require('mongoose');
+// const url = 'mongodb://47.15.11.122/32/Hello-Team'
+// mongoose.connect(url, { useNewUrlParser: true })
+// const database = mongoose.connection;
+// database.on('error', (error) => {
+//     console.log(error)
+// })
+// database.once('connected', () => {
+//     console.log('Database Connected');
+// })
 
 const app = express();
 app.use(express.json());

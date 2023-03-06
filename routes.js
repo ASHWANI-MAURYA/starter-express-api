@@ -61,8 +61,8 @@ router.post('/leave-application', async (req, res) => {
 //Get all Method
 router.get('/getAll/signIn', async (req, res) => {
     try {
-        const data = await Model.find();
-        res.json(data)
+        // const data = await Model.find();
+        res.json("data")
     }
     catch (error) {
         res.status(500).json({ message: error.message })
