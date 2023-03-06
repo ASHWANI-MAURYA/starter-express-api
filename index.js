@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const url = 'mongodb://127.0.0.1:27017/Hello-Team'
+const url = 'mongodb://47.15.11.122/32/Hello-Team'
 mongoose.connect(url, { useNewUrlParser: true })
 const database = mongoose.connection;
 database.on('error', (error) => {
